@@ -29,9 +29,9 @@ namespace vendasDesk.servidor
                             .Username(USER)
                             .Password(PASSWORD)
                             .Database(DB))
-                        //  .ShowSql()
-                        //  .FormatSql()
-                        //  .FormatSql()
+                         .ShowSql()
+                          .FormatSql()
+                          .FormatSql()
                         )
 
                         .Mappings(m => m.FluentMappings.AddFromAssemblyOf<Usuario>())
