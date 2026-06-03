@@ -1,18 +1,29 @@
-﻿using WinFormsApp1.database;
+﻿using Microsoft.EntityFrameworkCore;
+using WinFormsApp1.database;
 using WinFormsApp1.model.entidade;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WinFormsApp1.model.dao
 {
-    internal class FornecedorDao
+    public class FornecedorDao
     {
-        
         public List<Fornecedor> ListaFornecedores()
         {
-            using(var contexto = new AppDbContext())
+            using (var contexto = new AppDbContext())
             {
-                return contexto.Fornecedores.OrderBy(f=>f.NomeFantasia).ToList();
+                var itens = contexto
+                 .Fornecedores
+                 .Include(f => f.Contato)
+                 .Include(f => f.Endereco)
+                 .OrderBy(f => f.NomeFantasia)
+                 .ThenBy(f => f.Endereco.Bairro);
+
+                Console.WriteLine(itens.ToQueryString()); // Prints raw SQL
+
+                return itens.ToList();
             }
+
         }
-       
+
     }
 }

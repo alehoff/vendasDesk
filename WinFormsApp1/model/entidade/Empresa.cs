@@ -21,11 +21,11 @@ namespace WinFormsApp1.model.entidade
         [MaxLength(9)]
         public string? InscricaoEstadual { get; set; } = string.Empty;
 
-        public Contato Contato { get; set; } = null!;
+        public Contato Contato { get; set; } = new();
 
-        public Endereco Endereco { get; set; } = null!;
+        public Endereco Endereco { get; set; } = new();
 
-        public Status Status { get; set; }
+        public Status Status { get; set; } = Status.Ativo;
 
     }
 }

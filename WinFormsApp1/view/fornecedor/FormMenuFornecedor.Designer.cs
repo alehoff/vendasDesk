@@ -30,8 +30,8 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
             PanelListagem = new Panel();
+            tabPage2 = new TabPage();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             SuspendLayout();
@@ -40,11 +40,12 @@
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
+            tabControl1.Dock = DockStyle.Fill;
             tabControl1.Font = new Font("Candara", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tabControl1.Location = new Point(12, 12);
+            tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1116, 743);
+            tabControl1.Size = new Size(1140, 767);
             tabControl1.TabIndex = 0;
             tabControl1.Selected += tabControl1_Selected;
             // 
@@ -54,10 +55,18 @@
             tabPage1.Location = new Point(4, 33);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1108, 706);
+            tabPage1.Size = new Size(1132, 730);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Listagem";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // PanelListagem
+            // 
+            PanelListagem.Dock = DockStyle.Fill;
+            PanelListagem.Location = new Point(3, 3);
+            PanelListagem.Name = "PanelListagem";
+            PanelListagem.Size = new Size(1126, 724);
+            PanelListagem.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -68,14 +77,6 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // PanelListagem
-            // 
-            PanelListagem.Dock = DockStyle.Fill;
-            PanelListagem.Location = new Point(3, 3);
-            PanelListagem.Name = "PanelListagem";
-            PanelListagem.Size = new Size(1102, 700);
-            PanelListagem.TabIndex = 0;
             // 
             // FormMenuFornecedor
             // 

@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using WinFormsApp1.model.dao;
+﻿using WinFormsApp1.model.dao;
+using WinFormsApp1.model.entidade;
 
 namespace WinFormsApp1.view.fornecedor
 {
@@ -18,7 +10,25 @@ namespace WinFormsApp1.view.fornecedor
         {
             InitializeComponent();
             fornecedorDao = new FornecedorDao();
-            MessageBox.Show($"total de fornecedores {fornecedorDao.ListaFornecedores().Count}");
+        }
+
+        private void ButonAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using(var form = new FormCadastroFornecedor())
+                {
+                    form.Fornecedor = new Fornecedor();
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

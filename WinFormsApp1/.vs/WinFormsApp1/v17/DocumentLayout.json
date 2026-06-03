@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:view\\fornecedor\\formlistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\view\\fornecedor\\formlistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\formlistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:view\\fornecedor\\formlistagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\model\\dao\\fornecedordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:model\\dao\\fornecedordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\view\\fornecedor\\formcadastrofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:view\\fornecedor\\formcadastrofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\view\\fornecedor\\formmenufornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:view\\fornecedor\\formmenufornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\model\\entidade\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:model\\entidade\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\view\\fornecedor\\formcadastrofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:view\\fornecedor\\formcadastrofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\model\\entidade\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:model\\entidade\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\model\\entidade\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:model\\entidade\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|c:\\users\\alessandro\\documents\\github\\firma\\winformsapp1\\model\\dao\\fornecedordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADC2E1A3-5E87-455B-8006-C3F5C528FD57}|WinFormsApp1.csproj|solutionrelative:model\\dao\\fornecedordao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,79 +46,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormListagem.cs",
-              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormListagem.cs",
-              "RelativeDocumentMoniker": "view\\fornecedor\\FormListagem.cs",
-              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormListagem.cs",
-              "RelativeToolTip": "view\\fornecedor\\FormListagem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T09:37:02.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FornecedorDao.cs",
-              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\dao\\FornecedorDao.cs",
-              "RelativeDocumentMoniker": "model\\dao\\FornecedorDao.cs",
-              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\dao\\FornecedorDao.cs",
-              "RelativeToolTip": "model\\dao\\FornecedorDao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "FormCadastroFornecedor.cs",
+              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormCadastroFornecedor.cs",
+              "RelativeDocumentMoniker": "view\\fornecedor\\FormCadastroFornecedor.cs",
+              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormCadastroFornecedor.cs",
+              "RelativeToolTip": "view\\fornecedor\\FormCadastroFornecedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T09:16:27.889Z",
+              "WhenOpened": "2026-06-03T00:02:31.681Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\database\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "database\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\database\\AppDbContext.cs",
-              "RelativeToolTip": "database\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T23:29:41.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Endereco.cs",
-              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Endereco.cs",
-              "RelativeDocumentMoniker": "model\\entidade\\Endereco.cs",
-              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Endereco.cs",
-              "RelativeToolTip": "model\\entidade\\Endereco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T23:20:42.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Contato.cs",
-              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Contato.cs",
-              "RelativeDocumentMoniker": "model\\entidade\\Contato.cs",
-              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Contato.cs",
-              "RelativeToolTip": "model\\entidade\\Contato.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T23:17:15.44Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Empresa.cs",
-              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Empresa.cs",
-              "RelativeDocumentMoniker": "model\\entidade\\Empresa.cs",
-              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Empresa.cs",
-              "RelativeToolTip": "model\\entidade\\Empresa.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA3wBsAAAAqAAAAAAAAAA==",
+              "Title": "FormMenuFornecedor.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormMenuFornecedor.cs",
+              "RelativeDocumentMoniker": "view\\fornecedor\\FormMenuFornecedor.cs",
+              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormMenuFornecedor.cs [Projeto]",
+              "RelativeToolTip": "view\\fornecedor\\FormMenuFornecedor.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T23:10:04.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-02T17:00:21.938Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
@@ -131,6 +80,56 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T22:55:13.668Z",
               "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormListagem.cs",
+              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormListagem.cs",
+              "RelativeDocumentMoniker": "view\\fornecedor\\FormListagem.cs",
+              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormListagem.cs",
+              "RelativeToolTip": "view\\fornecedor\\FormListagem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T09:37:02.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Empresa.cs",
+              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Empresa.cs",
+              "RelativeDocumentMoniker": "model\\entidade\\Empresa.cs",
+              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\entidade\\Empresa.cs",
+              "RelativeToolTip": "model\\entidade\\Empresa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T23:10:04.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormCadastroFornecedor.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormCadastroFornecedor.cs",
+              "RelativeDocumentMoniker": "view\\fornecedor\\FormCadastroFornecedor.cs",
+              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\view\\fornecedor\\FormCadastroFornecedor.cs [Projeto]",
+              "RelativeToolTip": "view\\fornecedor\\FormCadastroFornecedor.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T23:51:56.036Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FornecedorDao.cs",
+              "DocumentMoniker": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\dao\\FornecedorDao.cs",
+              "RelativeDocumentMoniker": "model\\dao\\FornecedorDao.cs",
+              "ToolTip": "C:\\Users\\Alessandro\\Documents\\GitHub\\firma\\WinFormsApp1\\model\\dao\\FornecedorDao.cs",
+              "RelativeToolTip": "model\\dao\\FornecedorDao.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA+wA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T09:16:27.889Z"
             }
           ]
         }

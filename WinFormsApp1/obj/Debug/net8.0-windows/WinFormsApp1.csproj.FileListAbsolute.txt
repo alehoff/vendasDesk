@@ -101,3 +101,4 @@ C:\Users\Alessandro\Documents\GitHub\firma\WinFormsApp1\bin\Debug\net8.0-windows
 C:\Users\Alessandro\Documents\GitHub\firma\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
 C:\Users\Alessandro\Documents\GitHub\firma\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.view.fornecedor.FormMenuFornecedor.resources
 C:\Users\Alessandro\Documents\GitHub\firma\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.view.fornecedor.FormListagem.resources
+C:\Users\Alessandro\Documents\GitHub\firma\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.view.fornecedor.FormCadastroFornecedor.resources

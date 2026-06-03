@@ -21,8 +21,8 @@ namespace WinFormsApp1.database
 
             optionsBuilder
                 .UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
-                .LogTo(Console.WriteLine, LogLevel.Information);
-
+                .LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information) // Only SQL commands
+                .EnableSensitiveDataLogging(); // Show parameter values (use only in dev!)
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

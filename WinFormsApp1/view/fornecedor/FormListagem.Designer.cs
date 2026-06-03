@@ -30,14 +30,14 @@
         {
             tableLayoutPanel1 = new TableLayoutPanel();
             dataGridView1 = new DataGridView();
-            tableLayoutPanel2 = new TableLayoutPanel();
-            ButonAdd = new Button();
-            TxtFiltro = new TextBox();
             ColId = new DataGridViewTextBoxColumn();
             ColNomeFantasia = new DataGridViewTextBoxColumn();
             ColRazaoSocial = new DataGridViewTextBoxColumn();
             ColWhatsApp = new DataGridViewTextBoxColumn();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            ButonAdd = new Button();
             label1 = new Label();
+            TxtFiltro = new TextBox();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             tableLayoutPanel2.SuspendLayout();
@@ -70,38 +70,6 @@
             dataGridView1.Size = new Size(1050, 624);
             dataGridView1.TabIndex = 0;
             // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.ColumnCount = 3;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 48.2142868F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 51.7857132F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 820F));
-            tableLayoutPanel2.Controls.Add(ButonAdd, 0, 0);
-            tableLayoutPanel2.Controls.Add(label1, 1, 0);
-            tableLayoutPanel2.Controls.Add(TxtFiltro, 2, 0);
-            tableLayoutPanel2.Location = new Point(3, 3);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 1;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(1050, 39);
-            tableLayoutPanel2.TabIndex = 1;
-            // 
-            // ButonAdd
-            // 
-            ButonAdd.Location = new Point(3, 3);
-            ButonAdd.Name = "ButonAdd";
-            ButonAdd.Size = new Size(94, 29);
-            ButonAdd.TabIndex = 0;
-            ButonAdd.Text = "Add";
-            ButonAdd.UseVisualStyleBackColor = true;
-            // 
-            // TxtFiltro
-            // 
-            TxtFiltro.Location = new Point(232, 3);
-            TxtFiltro.Name = "TxtFiltro";
-            TxtFiltro.Size = new Size(654, 27);
-            TxtFiltro.TabIndex = 1;
-            // 
             // ColId
             // 
             ColId.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -110,7 +78,7 @@
             ColId.Name = "ColId";
             ColId.ReadOnly = true;
             ColId.Visible = false;
-            ColId.Width = 51;
+            ColId.Width = 125;
             // 
             // ColNomeFantasia
             // 
@@ -138,6 +106,32 @@
             ColWhatsApp.ReadOnly = true;
             ColWhatsApp.Width = 107;
             // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 48.2142868F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 51.7857132F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 820F));
+            tableLayoutPanel2.Controls.Add(ButonAdd, 0, 0);
+            tableLayoutPanel2.Controls.Add(label1, 1, 0);
+            tableLayoutPanel2.Controls.Add(TxtFiltro, 2, 0);
+            tableLayoutPanel2.Location = new Point(3, 3);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.Size = new Size(1050, 39);
+            tableLayoutPanel2.TabIndex = 1;
+            // 
+            // ButonAdd
+            // 
+            ButonAdd.Location = new Point(3, 3);
+            ButonAdd.Name = "ButonAdd";
+            ButonAdd.Size = new Size(94, 29);
+            ButonAdd.TabIndex = 0;
+            ButonAdd.Text = "Add";
+            ButonAdd.UseVisualStyleBackColor = true;
+            ButonAdd.Click += ButonAdd_Click;
+            // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
@@ -148,6 +142,13 @@
             label1.Size = new Size(113, 25);
             label1.TabIndex = 2;
             label1.Text = "Filtrar:";
+            // 
+            // TxtFiltro
+            // 
+            TxtFiltro.Location = new Point(232, 3);
+            TxtFiltro.Name = "TxtFiltro";
+            TxtFiltro.Size = new Size(654, 27);
+            TxtFiltro.TabIndex = 1;
             // 
             // FormListagem
             // 
