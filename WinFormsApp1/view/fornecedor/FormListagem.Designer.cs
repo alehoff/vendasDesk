@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
-            dataGridView1 = new DataGridView();
+            DgvFornecedor = new DataGridView();
             ColId = new DataGridViewTextBoxColumn();
             ColNomeFantasia = new DataGridViewTextBoxColumn();
             ColRazaoSocial = new DataGridViewTextBoxColumn();
@@ -39,7 +39,7 @@
             label1 = new Label();
             TxtFiltro = new TextBox();
             tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DgvFornecedor).BeginInit();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,7 +47,7 @@
             // 
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Controls.Add(dataGridView1, 0, 1);
+            tableLayoutPanel1.Controls.Add(DgvFornecedor, 0, 1);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
             tableLayoutPanel1.Location = new Point(12, 12);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -57,18 +57,18 @@
             tableLayoutPanel1.Size = new Size(1056, 686);
             tableLayoutPanel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // DgvFornecedor
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ColId, ColNomeFantasia, ColRazaoSocial, ColWhatsApp });
-            dataGridView1.Location = new Point(3, 56);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1050, 624);
-            dataGridView1.TabIndex = 0;
+            DgvFornecedor.AllowUserToAddRows = false;
+            DgvFornecedor.AllowUserToDeleteRows = false;
+            DgvFornecedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DgvFornecedor.Columns.AddRange(new DataGridViewColumn[] { ColId, ColNomeFantasia, ColRazaoSocial, ColWhatsApp });
+            DgvFornecedor.Location = new Point(3, 56);
+            DgvFornecedor.Name = "DgvFornecedor";
+            DgvFornecedor.ReadOnly = true;
+            DgvFornecedor.RowHeadersWidth = 51;
+            DgvFornecedor.Size = new Size(1050, 624);
+            DgvFornecedor.TabIndex = 0;
             // 
             // ColId
             // 
@@ -160,7 +160,7 @@
             Name = "FormListagem";
             Text = "FormListagem";
             tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DgvFornecedor).EndInit();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
             ResumeLayout(false);
@@ -169,7 +169,7 @@
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private DataGridView dataGridView1;
+        private DataGridView DgvFornecedor;
         private TableLayoutPanel tableLayoutPanel2;
         private Button ButonAdd;
         private TextBox TxtFiltro;

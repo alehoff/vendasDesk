@@ -9,15 +9,21 @@ namespace WinFormsApp1.model.entidade
         [Key]
         public int Id { get; set; }
 
-        [MaxLength(120)]
+        [Display(Name = "Logradouro", Description = "logradouro cliente")]
+        [StringLength(120, MinimumLength = 2, ErrorMessage = "Logradouro deve conter de 2 a 120 caracteres")]
+        [Required(ErrorMessage = "Nome Fantasia é obrigatório.")]
+        [MaxLength(120)]       
         public String NomeFantasia { get; set; } = string.Empty;
 
+        [StringLength(120, ErrorMessage = "Razão Social deve conter de 2 a 120 caracteres")]
         [MaxLength(120)]
         public String? RazaoSocial { get; set; } = string.Empty;
 
+        [StringLength(13,  ErrorMessage = "Cnpj deve conter 13 caracteres")]
         [MaxLength(13)]
         public string? Cnpj { get; set; } = string.Empty;
 
+        [StringLength(9, ErrorMessage = "Inscrição Estadual deve conter 9 caracteres")]
         [MaxLength(9)]
         public string? InscricaoEstadual { get; set; } = string.Empty;
 

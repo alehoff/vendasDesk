@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WinFormsApp1.database;
 using WinFormsApp1.model.entidade;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WinFormsApp1.model.dao
 {
@@ -9,20 +8,57 @@ namespace WinFormsApp1.model.dao
     {
         public List<Fornecedor> ListaFornecedores()
         {
-            using (var contexto = new AppDbContext())
+            try
             {
-                var itens = contexto
-                 .Fornecedores
-                 .Include(f => f.Contato)
-                 .Include(f => f.Endereco)
-                 .OrderBy(f => f.NomeFantasia)
-                 .ThenBy(f => f.Endereco.Bairro);
+                using (var contexto = new AppDbContext())
+                {
+                    var itens = contexto
+                     .Fornecedores
+                     .Include(f => f.Contato)
+                     .OrderBy(f => f.NomeFantasia)
+                     .ThenBy(f => f.Endereco.Bairro);
 
-                Console.WriteLine(itens.ToQueryString()); // Prints raw SQL
+                    Console.WriteLine(itens.ToQueryString()); // Prints raw SQL
 
-                return itens.ToList();
+                    return itens.ToList();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
             }
 
+        }
+
+        public void Salvar(Fornecedor fornecedor)
+        {
+            try
+            {
+                using (var contexto = new AppDbContext())
+                {
+                    contexto.Fornecedores.Add(fornecedor);
+                    contexto.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void Editar(Fornecedor fornecedor)
+        {
+            try
+            {
+                using (var contexto = new AppDbContext())
+                {
+                    contexto.Update(fornecedor);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
     }
