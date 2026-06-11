@@ -34,6 +34,7 @@
             ColNomeFantasia = new DataGridViewTextBoxColumn();
             ColRazaoSocial = new DataGridViewTextBoxColumn();
             ColWhatsApp = new DataGridViewTextBoxColumn();
+            ColEdita = new DataGridViewButtonColumn();
             tableLayoutPanel2 = new TableLayoutPanel();
             ButonAdd = new Button();
             label1 = new Label();
@@ -47,8 +48,9 @@
             // 
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Controls.Add(DgvFornecedor, 0, 1);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
+            tableLayoutPanel1.Controls.Add(DgvFornecedor, 0, 1);
+            tableLayoutPanel1.Font = new Font("Calisto MT", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tableLayoutPanel1.Location = new Point(12, 12);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
@@ -62,13 +64,15 @@
             DgvFornecedor.AllowUserToAddRows = false;
             DgvFornecedor.AllowUserToDeleteRows = false;
             DgvFornecedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvFornecedor.Columns.AddRange(new DataGridViewColumn[] { ColId, ColNomeFantasia, ColRazaoSocial, ColWhatsApp });
+            DgvFornecedor.Columns.AddRange(new DataGridViewColumn[] { ColId, ColNomeFantasia, ColRazaoSocial, ColWhatsApp, ColEdita });
             DgvFornecedor.Location = new Point(3, 56);
             DgvFornecedor.Name = "DgvFornecedor";
             DgvFornecedor.ReadOnly = true;
             DgvFornecedor.RowHeadersWidth = 51;
+            DgvFornecedor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             DgvFornecedor.Size = new Size(1050, 624);
             DgvFornecedor.TabIndex = 0;
+            DgvFornecedor.CellClick += DgvFornecedor_CellClick;
             // 
             // ColId
             // 
@@ -95,7 +99,7 @@
             ColRazaoSocial.MinimumWidth = 6;
             ColRazaoSocial.Name = "ColRazaoSocial";
             ColRazaoSocial.ReadOnly = true;
-            ColRazaoSocial.Width = 123;
+            ColRazaoSocial.Width = 114;
             // 
             // ColWhatsApp
             // 
@@ -104,7 +108,19 @@
             ColWhatsApp.MinimumWidth = 6;
             ColWhatsApp.Name = "ColWhatsApp";
             ColWhatsApp.ReadOnly = true;
-            ColWhatsApp.Width = 107;
+            ColWhatsApp.Width = 108;
+            // 
+            // ColEdita
+            // 
+            ColEdita.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            ColEdita.HeaderText = "Editar";
+            ColEdita.MinimumWidth = 6;
+            ColEdita.Name = "ColEdita";
+            ColEdita.ReadOnly = true;
+            ColEdita.Text = "Editar";
+            ColEdita.ToolTipText = "Editar";
+            ColEdita.UseColumnTextForButtonValue = true;
+            ColEdita.Width = 55;
             // 
             // tableLayoutPanel2
             // 
@@ -112,9 +128,9 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 48.2142868F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 51.7857132F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 820F));
-            tableLayoutPanel2.Controls.Add(ButonAdd, 0, 0);
-            tableLayoutPanel2.Controls.Add(label1, 1, 0);
             tableLayoutPanel2.Controls.Add(TxtFiltro, 2, 0);
+            tableLayoutPanel2.Controls.Add(label1, 1, 0);
+            tableLayoutPanel2.Controls.Add(ButonAdd, 0, 0);
             tableLayoutPanel2.Location = new Point(3, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
@@ -134,12 +150,11 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(113, 7);
+            label1.Location = new Point(113, 0);
             label1.Name = "label1";
-            label1.Size = new Size(113, 25);
+            label1.Size = new Size(60, 25);
             label1.TabIndex = 2;
             label1.Text = "Filtrar:";
             // 
@@ -147,7 +162,7 @@
             // 
             TxtFiltro.Location = new Point(232, 3);
             TxtFiltro.Name = "TxtFiltro";
-            TxtFiltro.Size = new Size(654, 27);
+            TxtFiltro.Size = new Size(654, 25);
             TxtFiltro.TabIndex = 1;
             // 
             // FormListagem
@@ -173,10 +188,11 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Button ButonAdd;
         private TextBox TxtFiltro;
+        private Label label1;
         private DataGridViewTextBoxColumn ColId;
         private DataGridViewTextBoxColumn ColNomeFantasia;
         private DataGridViewTextBoxColumn ColRazaoSocial;
         private DataGridViewTextBoxColumn ColWhatsApp;
-        private Label label1;
+        private DataGridViewButtonColumn ColEdita;
     }
 }

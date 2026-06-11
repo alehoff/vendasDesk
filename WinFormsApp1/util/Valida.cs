@@ -5,7 +5,7 @@ namespace WinFormsApp1.util
 {
     public class Valida
     {
-        public static void Validar<T>(T t)
+        public static bool Validar<T>(T t)
         {
             var resultadoValidacao = new List<ValidationResult>();
             var contexto = new ValidationContext(t, null, null);
@@ -20,8 +20,10 @@ namespace WinFormsApp1.util
                     sb.Append(item.ToString()).Append("\n");
                 }
 
-                throw new Exception(sb.ToString());
+                MessageBox.Show(sb.ToString());
+                return false;
             }
+            return true;
         }
 
     }

@@ -30,6 +30,19 @@ namespace WinFormsApp1.model.dao
 
         }
 
+        public Fornecedor LocalizaPeloId(int id)
+        {
+            using (var contexto = new AppDbContext())
+            {
+
+                return contexto.Fornecedores
+                    .Include(f => f.Contato)
+                    .Include(f => f.Endereco)
+                    .Where(f => f.Id == id)
+                    .Single();
+            }
+        }
+
         public void Salvar(Fornecedor fornecedor)
         {
             try
@@ -52,7 +65,8 @@ namespace WinFormsApp1.model.dao
             {
                 using (var contexto = new AppDbContext())
                 {
-                    contexto.Update(fornecedor);
+                    contexto.Fornecedores.Update(fornecedor);
+                    contexto.SaveChanges();
                 }
             }
             catch (Exception)

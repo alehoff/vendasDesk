@@ -30,33 +30,52 @@ namespace WinFormsApp1.view.fornecedor
 
         }
 
+        private void AddFornecedor(Fornecedor fornecedor)
+        {
+            using (var form = new FormCadastroFornecedor(fornecedor))
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    if (fornecedor.Id > 0)
+                    {
+                        fornecedorDao.Editar(fornecedor);
+                    }
+                    else
+                    {
+                        fornecedorDao.Salvar(fornecedor);
+                    }
+
+                    AtualizaDataGridView();
+                }
+            }
+        }
+
         private void ButonAdd_Click(object sender, EventArgs e)
         {
             try
             {
-                Fornecedor fornecedor = new();
-
-                using (var form = new FormCadastroFornecedor(fornecedor))
-                {
-                    if (form.ShowDialog() == DialogResult.OK)
-                    {
-                        if (fornecedor.Id > 0)
-                        {
-                            fornecedorDao.Editar(fornecedor);
-                        }
-                        else
-                        {
-                            fornecedorDao.Salvar(fornecedor);
-                        }
-
-                        AtualizaDataGridView();
-                    }
-
-                }
+                AddFornecedor(new Fornecedor());
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void DgvFornecedor_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 4)
+            {
+                try
+                {
+                    int idFornecedor = Convert.ToInt32(DgvFornecedor.SelectedCells[0].Value);
+                    Fornecedor fornecedor = fornecedorDao.LocalizaPeloId(idFornecedor);
+                    AddFornecedor(fornecedor);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
     }
