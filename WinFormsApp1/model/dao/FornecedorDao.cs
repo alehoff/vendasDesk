@@ -12,15 +12,12 @@ namespace WinFormsApp1.model.dao
             {
                 using (var contexto = new AppDbContext())
                 {
-                    var itens = contexto
-                     .Fornecedores
-                     .Include(f => f.Contato)
-                     .OrderBy(f => f.NomeFantasia)
-                     .ThenBy(f => f.Endereco.Bairro);
-
-                    Console.WriteLine(itens.ToQueryString()); // Prints raw SQL
-
-                    return itens.ToList();
+                    return contexto
+                      .Fornecedores
+                      .Include(f => f.Contato)
+                      .OrderBy(f => f.NomeFantasia)
+                      .ThenBy(f => f.Endereco.Bairro)
+                      .ToList();
                 }
             }
             catch (Exception)
@@ -34,7 +31,6 @@ namespace WinFormsApp1.model.dao
         {
             using (var contexto = new AppDbContext())
             {
-
                 return contexto.Fornecedores
                     .Include(f => f.Contato)
                     .Include(f => f.Endereco)
@@ -65,7 +61,7 @@ namespace WinFormsApp1.model.dao
             {
                 using (var contexto = new AppDbContext())
                 {
-                    contexto.Fornecedores.Update(fornecedor);
+                    contexto.Fornecedores.Update(fornecedor);//contexto.Entry(LocalizaPeloId(fornecedor.Id)).CurrentValues.SetValues(fornecedor);
                     contexto.SaveChanges();
                 }
             }

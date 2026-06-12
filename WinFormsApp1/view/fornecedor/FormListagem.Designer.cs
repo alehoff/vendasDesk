@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            TxtFiltro = new TextBox();
+            label1 = new Label();
+            ButonAdd = new Button();
             DgvFornecedor = new DataGridView();
             ColId = new DataGridViewTextBoxColumn();
             ColNomeFantasia = new DataGridViewTextBoxColumn();
             ColRazaoSocial = new DataGridViewTextBoxColumn();
             ColWhatsApp = new DataGridViewTextBoxColumn();
             ColEdita = new DataGridViewButtonColumn();
-            tableLayoutPanel2 = new TableLayoutPanel();
-            ButonAdd = new Button();
-            label1 = new Label();
-            TxtFiltro = new TextBox();
             tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)DgvFornecedor).BeginInit();
             tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)DgvFornecedor).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -58,6 +58,50 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 92.2740555F));
             tableLayoutPanel1.Size = new Size(1056, 686);
             tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 48.2142868F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 51.7857132F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 820F));
+            tableLayoutPanel2.Controls.Add(TxtFiltro, 2, 0);
+            tableLayoutPanel2.Controls.Add(label1, 1, 0);
+            tableLayoutPanel2.Controls.Add(ButonAdd, 0, 0);
+            tableLayoutPanel2.Location = new Point(3, 3);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.Size = new Size(1050, 39);
+            tableLayoutPanel2.TabIndex = 1;
+            // 
+            // TxtFiltro
+            // 
+            TxtFiltro.Location = new Point(232, 3);
+            TxtFiltro.Name = "TxtFiltro";
+            TxtFiltro.Size = new Size(654, 25);
+            TxtFiltro.TabIndex = 1;
+            TxtFiltro.KeyPress += TxtFiltro_KeyPress;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(113, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 25);
+            label1.TabIndex = 2;
+            label1.Text = "Filtrar:";
+            // 
+            // ButonAdd
+            // 
+            ButonAdd.Location = new Point(3, 3);
+            ButonAdd.Name = "ButonAdd";
+            ButonAdd.Size = new Size(94, 29);
+            ButonAdd.TabIndex = 0;
+            ButonAdd.Text = "Add";
+            ButonAdd.UseVisualStyleBackColor = true;
+            ButonAdd.Click += ButonAdd_Click;
             // 
             // DgvFornecedor
             // 
@@ -122,49 +166,6 @@
             ColEdita.UseColumnTextForButtonValue = true;
             ColEdita.Width = 55;
             // 
-            // tableLayoutPanel2
-            // 
-            tableLayoutPanel2.ColumnCount = 3;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 48.2142868F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 51.7857132F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 820F));
-            tableLayoutPanel2.Controls.Add(TxtFiltro, 2, 0);
-            tableLayoutPanel2.Controls.Add(label1, 1, 0);
-            tableLayoutPanel2.Controls.Add(ButonAdd, 0, 0);
-            tableLayoutPanel2.Location = new Point(3, 3);
-            tableLayoutPanel2.Name = "tableLayoutPanel2";
-            tableLayoutPanel2.RowCount = 1;
-            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel2.Size = new Size(1050, 39);
-            tableLayoutPanel2.TabIndex = 1;
-            // 
-            // ButonAdd
-            // 
-            ButonAdd.Location = new Point(3, 3);
-            ButonAdd.Name = "ButonAdd";
-            ButonAdd.Size = new Size(94, 29);
-            ButonAdd.TabIndex = 0;
-            ButonAdd.Text = "Add";
-            ButonAdd.UseVisualStyleBackColor = true;
-            ButonAdd.Click += ButonAdd_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(113, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(60, 25);
-            label1.TabIndex = 2;
-            label1.Text = "Filtrar:";
-            // 
-            // TxtFiltro
-            // 
-            TxtFiltro.Location = new Point(232, 3);
-            TxtFiltro.Name = "TxtFiltro";
-            TxtFiltro.Size = new Size(654, 25);
-            TxtFiltro.TabIndex = 1;
-            // 
             // FormListagem
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -175,9 +176,9 @@
             Name = "FormListagem";
             Text = "FormListagem";
             tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)DgvFornecedor).EndInit();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)DgvFornecedor).EndInit();
             ResumeLayout(false);
         }
 

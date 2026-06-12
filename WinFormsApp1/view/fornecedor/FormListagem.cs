@@ -6,20 +6,21 @@ namespace WinFormsApp1.view.fornecedor
     public partial class FormListagem : Form
     {
         private readonly FornecedorDao fornecedorDao;
+        private List<Fornecedor>? fornecedorList;
         public FormListagem()
         {
             InitializeComponent();
             fornecedorDao = new FornecedorDao();
-            AtualizaDataGridView();
+            AtualizaDataGridView(true);
         }
 
-        private void AtualizaDataGridView()
+        private void AtualizaDataGridView(bool atualiza)
         {
             DgvFornecedor.Rows.Clear();
 
-            var fornecedores = fornecedorDao.ListaFornecedores();
+           fornecedorList = atualiza ? fornecedorDao.ListaFornecedores() : fornecedorList;
 
-            foreach (var fornecedor in fornecedores.Where(f => f.NomeFantasia.Contains(TxtFiltro.Text.Trim())))
+            foreach (var fornecedor in fornecedorList.Where(f => f.NomeFantasia.ToUpper().Contains(TxtFiltro.Text.ToUpper().Trim())))
             {
                 DgvFornecedor.Rows.Add(
                     fornecedor.Id,
@@ -45,7 +46,7 @@ namespace WinFormsApp1.view.fornecedor
                         fornecedorDao.Salvar(fornecedor);
                     }
 
-                    AtualizaDataGridView();
+                    AtualizaDataGridView(true);
                 }
             }
         }
@@ -77,6 +78,11 @@ namespace WinFormsApp1.view.fornecedor
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void TxtFiltro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            AtualizaDataGridView(false);
         }
     }
 }

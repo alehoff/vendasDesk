@@ -98,6 +98,7 @@ namespace WinFormsApp1.view.fornecedor
             Fornecedor.Endereco.Logradouro = TxtLogradouro.Text;
             Fornecedor.Endereco.Bairro = TxtBairro.Text;
             Fornecedor.Endereco.Municipio = TxtMunicipio.Text;
+            Fornecedor.Endereco.Uf = TxtUF.Text;
         }
 
         private void AtualizaAtributosTela()
@@ -116,6 +117,7 @@ namespace WinFormsApp1.view.fornecedor
             TxtLogradouro.Text = Fornecedor.Endereco.Logradouro;
             TxtBairro.Text = Fornecedor.Endereco.Bairro;
             TxtMunicipio.Text = Fornecedor.Endereco.Municipio;
+            TxtUF.Text = Fornecedor.Endereco.Uf;
 
             TxtNomeFantasia.Focus();
         }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using MySqlConnector.Logging;
 using WinFormsApp1.model.entidade;
 
 namespace WinFormsApp1.database
@@ -12,7 +13,6 @@ namespace WinFormsApp1.database
         public DbSet<Contato> Contatos { get; set; }
         public DbSet<Fornecedor> Fornecedores { get; set; }
 
-
         // Configuração da conexão
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -21,8 +21,7 @@ namespace WinFormsApp1.database
 
             optionsBuilder
                 .UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
-                .LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information) // Only SQL commands
-                .EnableSensitiveDataLogging(); // Show parameter values (use only in dev!)
+                .LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
